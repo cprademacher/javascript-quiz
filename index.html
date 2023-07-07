@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Quiz - Timed</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -18,7 +19,18 @@
     </header>
 
     <main>
-        <div class="card">
+        <div id="quiz-description" class="card">
+            <h1>Coding Quiz Challenge!</h1>
+
+            <p>This quiz consists of 5 multiple choice questions.  You have one minute to complete
+                all the questions, and for each wrong answer 10 seconds will be taken of the clock.
+                The clock starts as soon as you press begin, so good luck!
+            </p>
+
+            <button class="button">Begin!</button>
+        </div>
+
+        <div id="quiz" class="card">
             <div class="question" id="question">
                 <h3>Question</h3>
             </div>
